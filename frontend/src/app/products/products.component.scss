@@ -1,0 +1,8 @@
+ul {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  justify-content: space-evenly;
+  app-products {
+    width: 5px;
+  }
+}

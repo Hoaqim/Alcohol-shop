@@ -1,0 +1,25 @@
+<mat-card class="product-page-card">
+  <mat-card-title
+    class="product-page-card-title"
+    fxLayout="row"
+    fxAlign="center"
+  >
+    {{ product?.name }}</mat-card-title
+  >
+  <img mat-card-image [src]="imageURL" />
+
+  <mat-card-actions fxLayoutAlign="center">
+    <button
+      mat-raised-button
+      color="primary"
+      class="add-item"
+      [attr.data-item-id]="product?.id"
+      [attr.data-item-price]="product?.price"
+      [attr.data-item-url]="'/api/' + product?.id"
+      [attr.data-item-image]="imageURL"
+      [attr.data-item-name]="product?.name"
+    >
+      Add to cart
+    </button>
+  </mat-card-actions>
+</mat-card>
